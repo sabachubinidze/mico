@@ -35,8 +35,9 @@
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 
-
+  <?php require 'HospitalTreatment.php'?>
   <?php require ('doctors.php') ?>
+  <?php require 'testimonialsection.php' ?>
 </head>
 
 <body>
@@ -164,79 +165,8 @@
         </h2>
       </div>
       <div class="row">
-        <div class="col-md-6 col-lg-3">
-          <div class="box ">
-            <div class="img-box">
-              <img src="images/t1.png" alt="">
-            </div>
-            <div class="detail-box">
-              <h4>
-                Nephrologist Care
-              </h4>
-              <p>
-                alteration in some form, by injected humour, or randomised words which don't look even slightly e sure there isn't anything
-              </p>
-              <a href="">
-                Read More
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="box ">
-            <div class="img-box">
-              <img src="images/t2.png" alt="">
-            </div>
-            <div class="detail-box">
-              <h4>
-                Eye Care
-              </h4>
-              <p>
-                alteration in some form, by injected humour, or randomised words which don't look even slightly e sure there isn't anything
-              </p>
-              <a href="">
-                Read More
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="box ">
-            <div class="img-box">
-              <img src="images/t3.png" alt="">
-            </div>
-            <div class="detail-box">
-              <h4>
-                Pediatrician Clinic
-              </h4>
-              <p>
-                alteration in some form, by injected humour, or randomised words which don't look even slightly e sure there isn't anything
-              </p>
-              <a href="">
-                Read More
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="box ">
-            <div class="img-box">
-              <img src="images/t4.png" alt="">
-            </div>
-            <div class="detail-box">
-              <h4>
-                Parental Care
-              </h4>
-              <p>
-                alteration in some form, by injected humour, or randomised words which don't look even slightly e sure there isn't anything
-              </p>
-              <a href="">
-                Read More
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+        
+          <?php printThreatment();?>            
     </div>
   </section>
 
@@ -276,60 +206,7 @@
     <div class="container px-0">
       <div id="customCarousel2" class="carousel  carousel-fade" data-ride="carousel">
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="box">
-              <div class="client_info">
-                <div class="client_name">
-                  <h5>
-                    Morijorch
-                  </h5>
-                  <h6>
-                    Default model text
-                  </h6>
-                </div>
-                <i class="fa fa-quote-left" aria-hidden="true"></i>
-              </div>
-              <p>
-                editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="box">
-              <div class="client_info">
-                <div class="client_name">
-                  <h5>
-                    Rochak
-                  </h5>
-                  <h6>
-                    Default model text
-                  </h6>
-                </div>
-                <i class="fa fa-quote-left" aria-hidden="true"></i>
-              </div>
-              <p>
-                Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="box">
-              <div class="client_info">
-                <div class="client_name">
-                  <h5>
-                    Brad Johns
-                  </h5>
-                  <h6>
-                    Default model text
-                  </h6>
-                </div>
-                <i class="fa fa-quote-left" aria-hidden="true"></i>
-              </div>
-              <p>
-                Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy, editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various
-              </p>
-            </div>
-          </div>
+          <?php printTestimonial(); ?>       
         </div>
         <div class="carousel_btn-box">
           <a class="carousel-control-prev" href="#customCarousel2" role="button" data-slide="prev">
