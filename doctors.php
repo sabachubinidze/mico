@@ -11,12 +11,12 @@
       ],
       [
           'img' => 'images/team2.jpg',
-          'name' => 'Hennry',
+          'name' => 'jenny',
           'MBBS' => 'MBBS'
       ],
       [
           'img' => 'images/team3.jpg',
-          'name' => 'Hennry',
+          'name' => 'morco',
           'MBBS' => 'MBBS'
       ],
     ];
